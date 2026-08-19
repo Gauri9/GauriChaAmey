@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/**
 @theme {
 
   --color-primary: 	#800020;
@@ -17,7 +18,111 @@
 
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Poppins", sans-serif;
+} */
+
+/**
+@theme {
+  --color-primary: #155E63;
+  --color-primary-dark: #0E4549;
+  --color-primary-light: #3D8588;
+
+  --color-secondary: #B08D57;
+
+  --color-background: #F5EFE3;
+  --color-surface: #FFFDF7;
+
+  --color-text-primary: #163A3D;
+  --color-text-secondary: #6B6255;
+  --color-text-light: #FFFDF7;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Poppins", sans-serif;
+}*/
+
+/**
+@theme {
+  --color-primary: #7A3045;
+  --color-primary-dark: #542033;
+  --color-primary-light: #A65D70;
+
+  --color-secondary: #B08D57;
+
+  --color-background: #F7EDEB;
+  --color-surface: #FFF9F6;
+
+//  --color-text-primary: #4A2630;
+  --color-text-secondary: #80666B;
+  --color-text-light: #FFF9F6;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Poppins", sans-serif;
+} **/
+
+/* shortlisted. try more darkaer rosy bg*/
+
+@theme {
+  --color-primary: 	#800020;
+  --color-primary-dark: #800020;
+  --color-primary-light: #800020;
+
+  --color-secondary: #B08D57;
+
+  --color-background: #F7EDEB; 
+  --color-surface: #FFF9F6; 
+
+ /*overwrite background and surface colors to make it more rosy*/
+  --color-background: #EAD6D3;
+  --color-surface: #F7EDEB;
+
+
+--color-text-primary: #800020;
+  --color-text-secondary:#800020;
+  --color-text-light: #800020;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Poppins", sans-serif;
 }
+  
+
+  /*
+  @theme {
+  --color-primary: 	#800020;
+  --color-primary-dark: #800020;
+  --color-primary-light: #800020;
+
+
+  --color-secondary: #B88A44;
+
+  --color-background: #F4E8D5;
+  --color-surface: #FFF9EE;
+
+  --color-text-primary: #4D2C25;
+  --color-text-secondary: #786258;
+  --color-text-light: #FFF9EE;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Poppins", sans-serif;
+}*/
+
+/*
+@theme {
+  --color-primary: #7B1E2B;
+  --color-primary-dark: #4D111A;
+  --color-primary-light: #A94A56;
+
+  --color-secondary: #B88A44;
+
+  --color-background: #F3E8D2;
+  --color-surface: #FFFDF5;
+
+  --color-text-primary: #4A1C23;
+  --color-text-secondary: #75615B;
+  --color-text-light: #FFFDF5;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Poppins", sans-serif;
+} */
+
 
 html {
   scroll-behavior: smooth;
