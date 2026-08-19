@@ -1,6 +1,5 @@
 import { useLanguage } from "../../context/LanguageContext";
 import { translations } from "../../data/translations";
-import { wedding } from "../../data/wedding";
 import TimelineItem from "./timeline-item";
 
 export default function Timeline() {
