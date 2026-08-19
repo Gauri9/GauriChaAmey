@@ -17,7 +17,6 @@ export default function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
 
-    
   return (
     <section className="min-h-screen bg-background flex items-center justify-center px-6 py-12">
 
@@ -25,7 +24,7 @@ export default function Hero() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative w-full max-w-3xl rounded-xl bg-surface px-10 py-16 shadow-2xl"
+        className="relative w-full max-w-lg md:max-w-3xl rounded-xl bg-surface px-6 py-10 md:px-10 md:py-16 shadow-2xl"
       >
         {/* Top Divider */}
 
@@ -34,7 +33,7 @@ export default function Hero() {
           className="mb-10 flex items-center gap-5"
         >
           <div className="h-px flex-1 bg-amber-300" />
-          <span className="text-amber-700 tracking-[0.35em] text-sm uppercase">
+          <span className="text-amber-700 tracking-[0.35em] text-xs md:text-sm uppercase">
             {t.title}
           </span>
           <div className="h-px flex-1 bg-amber-300" />
@@ -44,7 +43,7 @@ export default function Hero() {
 
         <motion.p
           //variants={item}
-          className="text-center text-sm uppercase tracking-[0.3em] text-gray-500"
+          className="text-center text-lg text-gray-700"
         >
           {t.family}
         </motion.p>
@@ -55,7 +54,7 @@ export default function Hero() {
           //variants={item}
           className="mt-12 text-center"
         >
-          <h1 className="font-serif text-6xl tracking-[0.28em] text-primary">
+          <h1 className="font-serif text-4xl font-bold md:text-6xl tracking-[0.18em] md:tracking-[0.28em] text-primary">
             {wedding.bride.toUpperCase()}
           </h1>
 
@@ -67,12 +66,12 @@ export default function Hero() {
               repeat: Infinity,
               duration: 4,
             }}
-            className="my-5 text-4xl text-amber-600"
+            className="my-4 md:my-5 text-3xl md:text-4xl text-primary"
           >
             ♡
           </motion.div>
 
-          <h1 className="font-serif text-6xl tracking-[0.28em] text-primary">
+          <h1 className="font-serif text-4xl font-bold md:text-6xl tracking-[0.18em] md:tracking-[0.28em] text-primary">
             {wedding.groom.toUpperCase()}
           </h1>
         </motion.div>
@@ -89,11 +88,20 @@ export default function Hero() {
 
           <div className="mx-auto mt-8 h-px w-28 bg-amber-400" />
 
-          <p className="mt-8 text-2xl font-medium text-gray-800">
-            {wedding.weddingDate}
-          </p>
+         <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 1,
+              ease: "easeOut",
+            }}
+            className="mt-8 font-serif text-2xl font-medium tracking-wide text-[#4A0E4E]"
+          >
+          {wedding.weddingDate}
+        </motion.p>
 
-          <p className="mt-2 tracking-widest uppercase text-gray-500">
+          <p className="mt-2 tracking-widest uppercase text-[#4A0E4E]">
             {wedding.location}
           </p>
         </motion.div>
@@ -112,7 +120,7 @@ export default function Hero() {
             whileTap={{
               scale: 0.97,
             }}
-            className="rounded-full bg-primary px-10 py-4 text-white tracking-wider shadow-lg transition-colors"
+            className="rounded-full bg-primary px-7 py-3 md:px-10 md:py-4 text-white tracking-wider shadow-lg transition-colors"
           >
             {t.explore}
           </motion.button>
