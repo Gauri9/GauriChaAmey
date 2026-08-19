@@ -18,14 +18,16 @@ export default function Hero() {
   const t = translations[language];
 
   return (
-    <section className="min-h-screen bg-background flex items-center justify-center px-6 py-12">
+   <section className="min-h-screen bg-background flex items-center justify-center px-6 py-12">
 
       <motion.div
         variants={container}
         initial="hidden"
-        animate="show"
-        className="relative w-full max-w-lg md:max-w-3xl rounded-xl bg-surface px-6 py-10 md:px-10 md:py-16 shadow-2xl"
+        //animate="show"
+        className="relative w-full max-w-lg md:max-w-3xl rounded-xl bg-surface px-6 pt-20 pb-10 md:px-10 md:pt-28 md:pb-16 shadow-2xl"
+        style={{backgroundImage: `url(${import.meta.env.BASE_URL}patrika-bg-3.jpg)`}}
       >
+        
         {/* Top Divider */}
 
         <motion.div
@@ -33,7 +35,7 @@ export default function Hero() {
           className="mb-10 flex items-center gap-5"
         >
           <div className="h-px flex-1 bg-amber-300" />
-          <span className="text-amber-700 tracking-[0.35em] text-xs md:text-sm uppercase">
+          <span className="text-amber-700 tracking-[0.35em] font-bold text-xs md:text-sm uppercase">
             {t.title}
           </span>
           <div className="h-px flex-1 bg-amber-300" />
@@ -43,7 +45,7 @@ export default function Hero() {
 
         <motion.p
           //variants={item}
-          className="text-center text-lg text-gray-700"
+          className="text-center text-lg text-primary-dark"
         >
           {t.family}
         </motion.p>
@@ -58,6 +60,7 @@ export default function Hero() {
             {wedding.bride.toUpperCase()}
           </h1>
 
+          
           <motion.div
             animate={{
               scale: [1, 1.08, 1],
@@ -68,8 +71,10 @@ export default function Hero() {
             }}
             className="my-4 md:my-5 text-3xl md:text-4xl text-primary"
           >
-            ♡
+           {/*  */}
+           ♡
           </motion.div>
+          
 
           <h1 className="font-serif text-4xl font-bold md:text-6xl tracking-[0.18em] md:tracking-[0.28em] text-primary">
             {wedding.groom.toUpperCase()}
