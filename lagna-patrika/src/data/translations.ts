@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    title: "Wedding Invitation",
+    title: "Wedding Card",
     family: "Together with their families",
     invite: "Request the honour of your presence",
     explore: "Explore Invitation",
