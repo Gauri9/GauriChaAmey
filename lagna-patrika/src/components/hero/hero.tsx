@@ -60,22 +60,12 @@ export default function Hero() {
             {wedding.bride.toUpperCase()}
           </h1>
 
-          
-          <motion.div
-            animate={{
-              scale: [1, 1.08, 1],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 4,
-            }}
-            className="my-4 md:my-5 text-3xl md:text-4xl text-primary"
-          >
-           {/*  */}
-           ♡
-          </motion.div>
-          
-
+          <img
+            src={`${import.meta.env.BASE_URL}gatbandhan_.png`}
+            className="mx-auto w-16 md:w-20 object-contain"
+            alt="Gatbandhan"
+          />
+         
           <h1 className="font-serif text-4xl font-bold md:text-6xl tracking-[0.18em] md:tracking-[0.28em] text-primary">
             {wedding.groom.toUpperCase()}
           </h1>
