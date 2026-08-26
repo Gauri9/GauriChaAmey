@@ -24,8 +24,13 @@ export default function Hero() {
         variants={container}
         initial="hidden"
         //animate="show"
-        className="relative w-full max-w-lg md:max-w-3xl rounded-xl bg-surface px-6 pt-20 pb-10 md:px-10 md:pt-28 md:pb-16 shadow-2xl"
-        style={{backgroundImage: `url(${import.meta.env.BASE_URL}patrika-bg-3.jpg)`}}
+         className="relative w-full max-w-lg md:max-w-3xl rounded-xl bg-surface px-6 pt-20 pb-10 md:px-10 md:pt-28 md:pb-16 shadow-2xl"
+  style={{
+    backgroundImage: `url(${import.meta.env.BASE_URL}patrika-bg-3.jpg)`,
+    backgroundSize: "100% 100%",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
       >
         
         {/* Top Divider */}
