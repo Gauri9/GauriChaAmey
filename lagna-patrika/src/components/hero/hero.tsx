@@ -82,7 +82,7 @@ export default function Hero() {
               }}
               whileTap={{ scale: 0.96 }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="mt-3 -translate-y-30 rounded-full bg-amber-300 px-8 py-3 text-sm font-semibold tracking-wider text-[#4A0E4E] shadow-lg"
+              className="mt-3 -translate-y-15 rounded-full bg-amber-300 px-8 py-3 text-sm font-semibold tracking-wider text-[#4A0E4E] shadow-lg md:-translate-y-30"
               aria-label="Open wedding invitation"
             >
               Open Invitation
@@ -137,7 +137,7 @@ export default function Hero() {
 
             <motion.div variants={item} className="mt-12 text-center">
               <h1 className="font-serif text-4xl font-bold md:text-6xl tracking-[0.18em] md:tracking-[0.28em] text-primary">
-                {wedding.bride.toUpperCase()}
+                {wedding.groom.toUpperCase()}
               </h1>
 
               <img
@@ -147,7 +147,7 @@ export default function Hero() {
               />
 
               <h1 className="font-serif text-4xl font-bold md:text-6xl tracking-[0.18em] md:tracking-[0.28em] text-primary">
-                {wedding.groom.toUpperCase()}
+                {wedding.bride.toUpperCase()}
               </h1>
             </motion.div>
 
