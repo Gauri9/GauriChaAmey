@@ -10,15 +10,13 @@ export default function Events() {
   return (
     <section className="bg-background px-6 py-16 md:py-24">
       <div className="mx-auto max-w-3xl">
-
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, scale: 0.9, y: 25 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8, type: "spring", bounce: 0.25 }}
           className="text-center"
         >
-
           <h2 className="mt-3 font-serif text-3xl md:text-5xl font-bold text-primary">
             {t.eventsTitle}
           </h2>
@@ -31,7 +29,6 @@ export default function Events() {
         </motion.div>
 
         <Timeline />
-
       </div>
     </section>
   );
